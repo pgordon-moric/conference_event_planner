@@ -168,11 +168,12 @@ const ConferenceEvent = () => {
                                             <div> ${item.cost} </div>
                                             <div className="addons_btn">
                                                 <button className="btn-warning" onClick={() => handleDecrementAvQuantity(index)}> &ndash; </button>
-                                                <span>className="quantity-value">{item.quantity}</span>
+                                                <span className="quantity-value">{item.quantity}</span>
                                                 <button className="btn-success" onClick={() => handleIncrementAvQuantity(index)}> &#43; </button>
                                         </div>
                                     </div>
                                    ))}
+                                </div>
                                 <div className="total_cost">Total Cost:</div>
 
                             </div>
