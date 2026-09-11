@@ -4,7 +4,7 @@ export const avSlice = createSlice({
   name: "av",
   initialState: [
     {
-        img: "./public/projectors.jpg",
+        img: "../../public/projectors.jpg",
         name: "Projectors",
         cost: 200,
         quantity: 0,
@@ -38,13 +38,13 @@ export const avSlice = createSlice({
   reducers: {
     incrementAvQuantity: (state, action) => {
         const item = state[action.payload];
-        if(item){
+        if (item) {
             item.quantity++;
-        }      
+        }
     },
     decrementAvQuantity: (state, action) => {
         const item = state[action.payload];
-        if (item && item.quantity > 0){
+        if (item && item.quantity > 0) {
             item.quantity--;
         }
     },
